@@ -1,0 +1,31 @@
+@import "../sass/_variables";
+@import "../sass/_mixins";
+.filter-container {
+	padding: $padding-x;
+	> .header {
+		margin: 40px 0 60px;
+		font-weight: 600;
+		font-size: 28px;
+	}
+	.filter {
+		@include flex;
+		justify-content: space-between;
+		.left,
+		.right {
+			@include flex;
+			justify-content: space-between;
+			> * {
+				margin-right: 20px;
+			}
+		}
+
+		.header {
+			font-weight: 600;
+			font-size: 18px;
+		}
+		select {
+			padding: 10px 12px;
+			border: 1px solid #333;
+		}
+	}
+}

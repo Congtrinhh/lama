@@ -1,0 +1,10 @@
+@mixin flex() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin container() {
+	max-width: 1100px;
+	margin: auto;
+}

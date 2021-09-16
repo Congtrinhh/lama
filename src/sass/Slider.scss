@@ -1,0 +1,105 @@
+@import "_variables";
+
+.slider {
+	position: relative;
+	height: 90vh;
+}
+
+.slide-container {
+	height: 90vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.slide {
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 0.5s ease;
+}
+.img-parent {
+	position: relative;
+	flex-basis: 44%;
+}
+.img-parent img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.img-parent::after {
+	content: "";
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: -1;
+	background-color: teal;
+	transform: translateY(-50%);
+}
+
+.info {
+	flex-grow: 1;
+	padding-top: 20vh;
+}
+
+.info .title {
+	font-size: 5.5rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.info .desc {
+	margin-bottom: 50px;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+.info .btn {
+	padding: 14px 20px;
+	border: 1px solid $primary-color;
+
+	background-color: transparent;
+
+	text-transform: capitalize;
+	font-size: 20px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+.info .btn:hover {
+	background-color: $secondary-color;
+	color: #fff;
+	border-color: $secondary-color;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	transform: translateY(-4px) scale(1.03);
+}
+.info .btn .icon {
+	vertical-align: sub;
+}
+
+.slider__indicator {
+	padding: 0 20px;
+
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	z-index: 100;
+
+	display: flex;
+	justify-content: space-between;
+}
+.slider__indicator > * {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.05);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
