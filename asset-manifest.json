@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/lama/static/css/main.54faec93.chunk.css",
+    "main.js": "/lama/static/js/main.f1b73801.chunk.js",
+    "main.js.map": "/lama/static/js/main.f1b73801.chunk.js.map",
+    "runtime-main.js": "/lama/static/js/runtime-main.f3d376eb.js",
+    "runtime-main.js.map": "/lama/static/js/runtime-main.f3d376eb.js.map",
+    "static/js/2.53451b7d.chunk.js": "/lama/static/js/2.53451b7d.chunk.js",
+    "static/js/2.53451b7d.chunk.js.map": "/lama/static/js/2.53451b7d.chunk.js.map",
+    "index.html": "/lama/index.html",
+    "static/css/main.54faec93.chunk.css.map": "/lama/static/css/main.54faec93.chunk.css.map",
+    "static/js/2.53451b7d.chunk.js.LICENSE.txt": "/lama/static/js/2.53451b7d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f3d376eb.js",
+    "static/js/2.53451b7d.chunk.js",
+    "static/css/main.54faec93.chunk.css",
+    "static/js/main.f1b73801.chunk.js"
+  ]
+}
